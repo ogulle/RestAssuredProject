@@ -1,3 +1,5 @@
+package day01;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,7 +17,7 @@ public class SampleTest {
         assertEquals(9,4+5);
 
         // how do we add error message if the assertion fail
-        assertEquals(10,5+4,"Hey wrong result!!");
+        //assertEquals(10,5+4,"Hey wrong result!!");
 
 
 
@@ -27,6 +29,15 @@ public class SampleTest {
     @DisplayName("I am testing name")
     @Test
     public void nameTest(){
+
+        //write a simple assertion
+        //concatenate your first name and last name
+        //and make assertion it`s equal to your full name
+        String firstName = "Sedat";
+        String lastName = "Tore";
+
+        assertEquals("Sedat Tore", firstName+" "+lastName);
+
 
     }
 
